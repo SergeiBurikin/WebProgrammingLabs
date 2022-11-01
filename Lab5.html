@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Иван Бекетов. Дмитрий Давыдов. ФБИ-03. Лабораторная работа 5</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+            }
+            .header {
+                background-color:#333333;
+                color:#ffe4c4;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: left;
+                height: 80px;
+                line-height: 80px;
+                padding-left: 30px;
+            }
+            .footer {
+                background-color: #333;
+                color: #888;
+                font-style: italic;
+                text-align: right;
+                font-size: 14px;
+                height: 30px;
+                line-height: 30px;
+                padding-right: 20px;
+            } 
+            .a {
+                display: inline;
+                font-size: 350%;
+                border-style: double;
+                background-color: rgb(61, 136, 233);
+                border-radius: 10px;
+            }   
+            .b {
+                float: left;
+                width: 200px;
+                height: 50px; 
+                border-style: inset;
+                background-color: rgb(233, 88, 88);
+            }
+            .c {
+                float: right;
+                background-color: rgb(12, 170, 72);
+                width: 200px;
+                height: 50px; 
+                border-style:double;
+            }
+
+            .d {
+                position: relative;
+            }
+            .e {
+                border-style: groove;
+                width: 300px;
+                height: 100px;
+                background-color: rgb(30, 132, 228);
+                text-align: center;
+                display: block;
+                line-height: 100px;
+            }
+            .e:hover {
+                color: rgb(155, 16, 16);
+                background-color: rgb(22, 206, 114);
+                z-index: 1;
+            }
+            .footer{
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                height: 30px;
+                background: rgb(2, 2, 2);
+                z-index: 100
+                flex: 0 0 auto;
+            }
+
+
+        </style>        
+    </head>
+    <body>
+       <div class="header">
+            Иван Бекетов, Дмитрий Давыдов
+       </div> 
+       <div class="content">
+            <h1>Inline</h1>
+            <div class="a">block 1</div>
+            <div class="a">block 2</div>
+            <div class="a">block 3</div>
+
+            <h1>Float</h1>
+            <div class="b">block 1</div>
+            <div class="b">block 2</div>
+            <div class="b">block 3</div>
+
+            <div class="c">block 4</div>
+            <div class="c">block 5</div>
+            <div class="c">block 6</div>
+
+            <div style="clear: both">end</div>
+
+            <h1>Relative</h1>
+            <div class="d" style="left: 30px;">В тот год осення погода</div>
+            <div class="d" style="left: 50px;">Стояла долго на дворе</div>
+            <div class="d" style="left: 70px;">Зимы ждала, ждала природа</div>
+            <div class="d" style="left: 90px;">Снег выпал только в январе</div>
+
+            <h1>Absolute</h1>
+            <div>На третье в ночь. Проснувшись рано,</div>
+            <div>В окно увидела Татьяна</div>
+            <div style="position:absolute; left: 200px; top: 100px;">Поутру побелевший двор,</div>
+            <div>Куртины, кровли и забор,</div>
+
+            <h1>Fixed</h1>
+            <div style="position:fixed; bottom: 300px; right: 300px;">На стеклах легкие узоры,<br>
+                Деревья в зимнем серебре,<br>
+                Сорок веселых на дворе<br>
+                И мягко устланные горы<br>
+                Зимы блистательным ковром<br>
+                Все ярко, все бело кругом.
+            </div>
+
+            <div class="e" style="position: relative; top: 0px; left: 150px;" >Блок А</div>
+            <div class="e" style="position: relative; top: -20px; left: 170px;">Блок Б</div>
+            <div class="e" style="position: relative; top: -40px; left: 190px;">Блок В</div>
+            <div class="e" style="position: relative; top: -60px; left: 210px;">Блок Г</div>
+            <div class="e" style="position: relative; top: -80px; left: 230px;">Блок Д</div>
+       </div>
+       <div class="footer">
+            Факультет бизнеса, ФБИ-03, 3 курс, 2022
+       </div>
+    </body>
+</html>
