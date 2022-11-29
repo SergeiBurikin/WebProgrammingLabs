@@ -9,33 +9,38 @@
 
             let x = 33;
             let s = 'яблоки'
-            let if = 17;
+            // let if = 17;
             console.log('x=', x, 's=', s);
         </script>
+        <script src="lab6.js"></script>
     </head>
     <body>
         <div class="header">
-            Иван Бекетов, Дмитрий Давыдов
+            <div id="student">Иван Бекетов, Дмитрий Давыдов</div>
+            <div class="language">
+                <input type="button" value="ru" onclick="setRussian()">
+                <input type="button" value="en"onclick="setEnglish()">
+            </div>
         </div> 
-        <div class="content">
+        <div class="content" id="content">
             <form >
                 <div>
                     <div>
-                        <span>Ваше имя</span>: <input type="text">
+                        <span id="your-name">Ваше имя</span>: <input type="text" id="input-name" placeholder="введите имя">
                     </div>
                     <div>
-                        <span>Ваша фамилия</span>: <input type="text">
+                        <span id="your-surname">Ваша фамилия</span>: <input type="text" id="input-surname" placeholder="введите фамилию">
                     </div>
                     <div>
-                        <span>Ваш возраст</span>: <input type="number">
+                        <span id="your-age">Ваш возраст</span>: <input type="number" id="input-age" placeholder="введите возраст">
                     </div>
-                    <input type="button" value="ок">
-                    <input type="text" value="сброс">
+                    <input type="button" value="Ок" id="ok-button">
+                    <input type="text" value="Сброс" id="reset-button">
                 </div>
             </form>
 
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
             Факультет бизнеса, ФБИ-03, 3 курс, 2002
         </div>
     </body>
