@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="header">
-            <div id="student">Иван Бекетов, Дмитрий Давыдов</div>
+            <div id="student" onclick="showAlert1()">Иван Бекетов, Дмитрий Давыдов</div>
             <div class="language">
                 <input type="button" value="ru" onclick="setRussian()">
                 <input type="button" value="en"onclick="setEnglish()">
@@ -24,7 +24,7 @@
         </div> 
         <div class="content" id="content">
             <form >
-                <div>
+                <div id="user-data">
                     <div>
                         <span id="your-name">Ваше имя</span>: <input type="text" id="input-name" placeholder="введите имя">
                     </div>
@@ -34,7 +34,7 @@
                     <div>
                         <span id="your-age">Ваш возраст</span>: <input type="number" id="input-age" placeholder="введите возраст">
                     </div>
-                    <input type="button" value="Ок" id="ok-button">
+                    <input type="button" value="Ок" id="ok-button" onclick="showAlert()">
                     <input type="text" value="Сброс" id="reset-button">
                 </div>
             </form>
