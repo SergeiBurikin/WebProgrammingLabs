@@ -52,3 +52,5 @@ function showAlert() {
     let color = 'rgb('+ r + ',' + g + ',' + b + ')';
     document.getElementById('student').style.backgroundColor = color; 
  }
+
+ 
