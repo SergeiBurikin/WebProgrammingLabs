@@ -10,7 +10,7 @@ function showDaysCount(params) {
     let birthday = new Date(inputDate.value);
     let daysCount = (today - birthday)/1000/60/60/24;
     let result = document.getElementById('result');
-    daysCount = Math.ceil(daysCount); // округляяем в меньшую сторону
+    daysCount = Math.ceil(daysCount);
     result.innerHTML = 'С даты рождения прошло дней: ' + daysCount;
 }
 
